@@ -194,7 +194,11 @@ window.addEventListener('scroll', () => {
 
 // ---------- DARK/LIGHT THEME TOGGLE ----------
 const themeToggleBtn = document.getElementById('theme-toggle');
-const currentTheme = localStorage.getItem('theme') || 'light';
+let currentTheme = localStorage.getItem('theme');
+
+if (!currentTheme) {
+  currentTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
 
 if (currentTheme === 'dark') {
   document.documentElement.setAttribute('data-theme', 'dark');
