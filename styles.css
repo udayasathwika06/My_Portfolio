@@ -287,8 +287,14 @@ h1, h2, h3, .section-title, .btn {
   gap: 3rem;
   align-items: center;
 }
-.about-text p { margin-bottom: 0.8rem; font-size: 1.1rem; }
-.about-text i { width: 28px; color: var(--accent-color); }
+.about-text p { 
+  margin-bottom: 0.8rem; 
+  font-size: 1.1rem; 
+  display: flex; 
+  align-items: center; 
+  word-break: break-word;
+}
+.about-text i { width: 28px; flex-shrink: 0; color: var(--accent-color); }
 .about-highlight {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -588,8 +594,14 @@ h1, h2, h3, .section-title, .btn {
   box-shadow: 0 20px 30px var(--shadow);
   backdrop-filter: blur(10px);
 }
-.contact-info p { margin: 1.2rem 0; font-size: 1.1rem; }
-.contact-info i { width: 30px; color: var(--accent-color); }
+.contact-info p { 
+  margin: 1.2rem 0; 
+  font-size: 1.1rem; 
+  display: flex; 
+  align-items: center; 
+  word-break: break-word;
+}
+.contact-info i { width: 30px; flex-shrink: 0; color: var(--accent-color); }
 /* keep contact links clean (no underline) while still allowing clicks */
 .contact-info a,
 .about-text a {
@@ -776,7 +788,33 @@ footer .footer-social a:hover { color: var(--accent-color); transform: scale(1.2
   .hero-content {
     flex-direction: column;
     text-align: center;
-    gap: 2rem;
+    gap: 0;
+  }
+  .hero-text {
+    display: contents;
+  }
+  .hero-content .greeting {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+  .hero-image {
+    order: 2;
+    margin-bottom: 1.5rem;
+  }
+  .hero-content .name {
+    order: 3;
+  }
+  .hero-content .typing-wrapper {
+    order: 4;
+  }
+  .hero-content .short-intro {
+    order: 5;
+  }
+  .hero-content .hero-btns {
+    order: 6;
+  }
+  .hero-social {
+    justify-content: center;
   }
   .hero-image img {
     width: 225px;
@@ -787,7 +825,18 @@ footer .footer-social a:hover { color: var(--accent-color); transform: scale(1.2
 }
 @media (max-width: 600px) {
   .section { padding: 3rem 1rem; }
-  .hero-btns .btn { width: 100%; text-align: center; }
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-btns .btn { 
+    width: 100%; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 0.5rem; 
+  }
   .edu-cards { flex-direction: column; }
   .hero-image img {
     width: 175px;
