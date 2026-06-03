@@ -79,9 +79,9 @@
           <p><i class="fas fa-heart"></i> Music, Drawing, Dancing</p>
         </div>
         <div class="about-highlight">
-          <div class="highlight-card"><span>2+</span> Projects</div>
-          <div class="highlight-card"><span>2+</span> Internships</div>
-          <div class="highlight-card"><span>CGPA 9.5</span> B.Tech</div>
+          <div class="highlight-card"><i class="fas fa-laptop-code highlight-icon"></i><span>2+</span> Projects</div>
+          <div class="highlight-card"><i class="fas fa-briefcase highlight-icon"></i><span>2+</span> Internships</div>
+          <div class="highlight-card"><i class="fas fa-graduation-cap highlight-icon"></i><span>9.5</span> CGPA</div>
         </div>
       </div>
     </div>
@@ -92,9 +92,9 @@
     <div class="container">
       <h2 class="section-title">Education</h2>
       <div class="edu-cards">
-        <div class="edu-card"><h3>B.Tech CSE</h3><p>SR University (2023–2027)</p><span>CGPA: 9.5</span></div>
-        <div class="edu-card"><h3>Intermediate MPC</h3><p>Krishnaveni Junior College</p><span>81.6%</span></div>
-        <div class="edu-card"><h3>SSC</h3><p>Excellent High School</p><span>GPA: 10.0</span></div>
+        <div class="edu-card"><div class="edu-icon"><i class="fas fa-university"></i></div><h3>B.Tech CSE</h3><p>SR University (2023–2027)</p><span class="edu-score">CGPA: 9.5</span></div>
+        <div class="edu-card"><div class="edu-icon"><i class="fas fa-school"></i></div><h3>Intermediate MPC</h3><p>Krishnaveni Junior College</p><span class="edu-score">81.6%</span></div>
+        <div class="edu-card"><div class="edu-icon"><i class="fas fa-book-reader"></i></div><h3>SSC</h3><p>Excellent High School</p><span class="edu-score">GPA: 10.0</span></div>
       </div>
     </div>
   </section>
@@ -104,11 +104,53 @@
     <div class="container">
       <h2 class="section-title">Skills</h2>
       <div class="skills-cats">
-        <div class="skill-cat"><h3>Programming</h3><div class="skill-items">Java, HTML, CSS, MERN Stack, Python, C</div></div>
-        <div class="skill-cat"><h3>Databases</h3><div class="skill-items">SQL, PostgreSQL, MongoDB</div></div>
-        <div class="skill-cat"><h3>Tools & Concepts</h3><div class="skill-items">Git, GitHub, Postman, DBMS, OS, DSA</div></div>
-        <div class="skill-cat"><h3>Data Tools</h3><div class="skill-items">Tableau, Power BI, Excel</div></div>
-        <div class="skill-cat"><h3>Soft Skills</h3><div class="skill-items">Problem Solving, Teamwork, Leadership, Communication</div></div>
+        <div class="skill-cat">
+          <h3><i class="fas fa-code"></i> Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">MERN Stack</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <h3><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <h3><i class="fas fa-tools"></i> Tools & Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">OS</span>
+            <span class="skill-tag">DSA</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <h3><i class="fas fa-chart-pie"></i> Data Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Excel</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Communication</span>
+          </div>
+        </div>
       </div>
       <!-- progress bars for core technical skills (visual) -->
       <!-- <div class="progress-bars">
@@ -130,7 +172,9 @@
         <div class="project-card">
           <h3>Travel Agency Website</h3>
           <p class="date">Sep–Nov 2024</p>
-          <p>HTML, CSS, JavaScript – trip planning & booking UI.</p>
+          <div class="skill-tags project-tags">
+            <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span>
+          </div>
           <p>A frontend website for trip planning and booking. Easy browsing with seamless experience for travelers exploring new destinations.</p>
           <div class="project-links">
             <a href="https://udayasathwika06.github.io/Travel-agency-website/" target="_blank" class="project-link primary-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -140,7 +184,9 @@
         <div class="project-card">
           <h3>LostLink</h3>
           <p class="date">Dec 2025–Feb 2026</p>
-          <p>HTML, CSS, JS, SQL, Java – lost & found management for college</p>
+          <div class="skill-tags project-tags">
+            <span class="skill-tag">HTML/CSS</span><span class="skill-tag">JS</span><span class="skill-tag">SQL</span><span class="skill-tag">Java</span>
+          </div>
           <p>A centralized lost-and-found management system for college. Students can sign up, post missing/found items, and search the database to recover belongings.</p>
           <div class="project-links">
             <a href="https://lost-link-henna.vercel.app/lostlink/index.html" target="_blank" class="project-link primary-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -150,7 +196,9 @@
         <div class="project-card">
           <h3>Expensio</h3>
           <p class="date">2026</p>
-          <p>React, Tailwind CSS, Python, FastAPI, Supabase, OCR, Docker</p>
+          <div class="skill-tags project-tags">
+            <span class="skill-tag">React</span><span class="skill-tag">Tailwind</span><span class="skill-tag">Python</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Supabase</span>
+          </div>
           <p>An AI-powered expense tracking and personal finance management web application. Users can securely manage expenses, upload receipts, automatically categorize spending using OCR and AI services, and analyze financial data through an interactive dashboard.</p>
           <div class="project-links">
             <a href="https://expensio-vert.vercel.app/" target="_blank" class="project-link primary-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -166,8 +214,14 @@
     <div class="container">
       <h2 class="section-title">Internships</h2>
       <div class="intern-list">
-        <div class="intern-item"><span class="role">Data Analyst Intern</span> @ Elevate Labs (Jun–Jul 2025) <span class="badge">Best Performer</span><p>Tableau, SQL, Python</p></div>
-        <div class="intern-item"><span class="role">Data Visualization Associate</span> @ Excelerate <span class="badge">Team Lead</span><p>Looker Studio, Excel, PostgreSQL</p></div>
+        <div class="intern-item">
+          <span class="role"><i class="fas fa-building company-icon"></i> Data Analyst Intern</span> @ Elevate Labs (Jun–Jul 2025) <span class="badge glowing-badge">Best Performer</span>
+          <div class="skill-tags"><span class="skill-tag">Tableau</span><span class="skill-tag">SQL</span><span class="skill-tag">Python</span></div>
+        </div>
+        <div class="intern-item">
+          <span class="role"><i class="fas fa-building company-icon"></i> Data Visualization Associate</span> @ Excelerate <span class="badge glowing-badge">Team Lead</span>
+          <div class="skill-tags"><span class="skill-tag">Looker Studio</span><span class="skill-tag">Excel</span><span class="skill-tag">PostgreSQL</span></div>
+        </div>
       </div>
     </div>
   </section>
